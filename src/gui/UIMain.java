@@ -213,7 +213,7 @@ public class UIMain implements UIMainAPI, Observer {
 
 	private void setupTitleAndMenuButton() {
 		Frame frame = new Frame(10,20,32,32);
-		_menuButton = GUITools.makeButton(new Image("menu.png"), frame, new EventHandler<MouseEvent>() {
+		_menuButton = GUITools.makeButton(new Image("resources/images/menu.png"), frame, new EventHandler<MouseEvent>() {
 			public void handle(MouseEvent me) {
 				slideMenuIn();
 			}
@@ -265,7 +265,7 @@ public class UIMain implements UIMainAPI, Observer {
 				TERMINAL_FRAME.getMaxX() + 4,
 				TERMINAL_FRAME.getY() + (TERMINAL_FRAME.getHeight() - 32) / 2,
 				32, 32);
-		ImageButton exec = GUITools.makeButton(new Image("execute.png"), exeFrame, new EventHandler<MouseEvent>() {
+		ImageButton exec = GUITools.makeButton(new Image("resources/images/execute.png"), exeFrame, new EventHandler<MouseEvent>() {
 			public void handle(MouseEvent me) {
 				didPressExecute();
 			}
@@ -275,7 +275,7 @@ public class UIMain implements UIMainAPI, Observer {
 				HISTORY_FRAME.getMaxX() + 4,
 				HISTORY_FRAME.getY() + (HISTORY_FRAME.getHeight() - 32) / 2,
 				32,32);
-		ImageButton reset = GUITools.makeButton(new Image("reset.png"), resFrame, new EventHandler<MouseEvent>() {
+		ImageButton reset = GUITools.makeButton(new Image("resources/images/reset.png"), resFrame, new EventHandler<MouseEvent>() {
 			public void handle(MouseEvent me) {
 				didPressReset();
 			}

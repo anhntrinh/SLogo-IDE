@@ -62,9 +62,9 @@ public class ShapesView extends UIView {
 		double y = 40;
 		double width = (getBounds().getWidth() - 4*inset)/3;
 		double height = getBounds().getHeight() - 48;
-		addShape(0, new Image("turtle.png"), new Frame(inset, y, width, height));
-		addShape(1, new Image("pacman.png"), new Frame(2*inset + width, y, width, height));
-		addShape(2, new Image("devil.png"), new Frame(3*inset + 2*width, y, width, height));
+		addShape(0, new Image("resources/images/turtle.png"), new Frame(inset, y, width, height));
+		addShape(1, new Image("resources/images/pacman.png"), new Frame(2*inset + width, y, width, height));
+		addShape(2, new Image("resources/images/devil.png"), new Frame(3*inset + 2*width, y, width, height));
 		
 	}
 

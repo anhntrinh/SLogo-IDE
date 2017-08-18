@@ -111,7 +111,7 @@ public class UIMenuView extends UIView {
 
 	private void setupHelpButton() {
 		ImageButton b = new ImageButton();
-		b.updateImages(new Image("q.png"), new Image("q.png"));
+		b.updateImages(new Image("resources/images/q.png"), new Image("resources/images/q.png"));
 		b.setLayoutX(16);
 		b.setLayoutY(10);
 		b.setPrefWidth(32);
@@ -176,7 +176,7 @@ public class UIMenuView extends UIView {
 		browser.setPrefWidth(UIMain.SCREEN_WIDTH);
 		browser.setPrefHeight(UIMain.SCREEN_HEIGHT);
 		ImageButton button = new ImageButton();
-		button.updateImages(new Image("turtle.png"), new Image("turtle.png"));
+		button.updateImages(new Image("resources/images/turtle.png"), new Image("resources/images/turtle.png"));
 		button.setOnMouseClicked(e -> {
 			this.getChildren().remove(browser);
 			this.getChildren().remove(button);
@@ -231,7 +231,7 @@ public class UIMenuView extends UIView {
 		imagePicker.setPrefHeight(IMAGE_FRAME.getHeight());
 		GUITools.addBackgroundWithColor(imagePicker, MyColors.GREEN_100, IMAGE_FRAME.toLocalBounds());
 
-		_turtleImageView = new ImageView(new Image("turtle.png"));
+		_turtleImageView = new ImageView(new Image("resources/images/turtle.png"));
 		_turtleImageView.setLayoutX(12);
 		_turtleImageView.setLayoutY(12);
 		_turtleImageView.setFitHeight(32);
@@ -267,7 +267,7 @@ public class UIMenuView extends UIView {
 
 	private void setupBackButton() {
 		ImageButton b = new ImageButton();
-		b.updateImages(new Image("back.png"), new Image("back.png"));
+		b.updateImages(new Image("resources/images/back.png"), new Image("resources/images/back.png"));
 		b.setLayoutX(getBounds().getWidth() - 64);
 		b.setLayoutY(10);
 		b.setPrefWidth(32);

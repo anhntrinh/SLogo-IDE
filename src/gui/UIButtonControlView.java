@@ -39,17 +39,17 @@ public class UIButtonControlView extends UIView{
 				new BorderStroke(MyColors.GREEN_100, BorderStrokeStyle.SOLID,
 						new CornerRadii(3), new BorderWidths(1.5))
 				}));
-		setupButton(_playButton, 16, "play.png",new EventHandler<MouseEvent>() {
+		setupButton(_playButton, 16, "resources/images/play.png",new EventHandler<MouseEvent>() {
 			public void handle(MouseEvent me) {
 				play();
 			}
 		});
-		setupButton(_pauseButton, 60, "pause.png",new EventHandler<MouseEvent>() {
+		setupButton(_pauseButton, 60, "resources/images/pause.png",new EventHandler<MouseEvent>() {
 			public void handle(MouseEvent me) {
 				pause();
 			}
 		});
-		setupButton(_stopButton, 104, "stop.png",new EventHandler<MouseEvent>() {
+		setupButton(_stopButton, 104, "resources/images/stop.png",new EventHandler<MouseEvent>() {
 			public void handle(MouseEvent me) {
 				stop();
 			}

@@ -53,7 +53,7 @@ public class UITurtle extends Pane implements Observer {
 
 	public UITurtle(Tuple<TranslateTransition, RotateTransition> animators, TurtleDisplayHandler handler,
 			Frame displayBounds, TurtleState state) {
-		this(animators, new Image("turtle.png"),state, handler, displayBounds);
+		this(animators, new Image("resources/images/turtle.png"),state, handler, displayBounds);
 	}
 	
 	/**
